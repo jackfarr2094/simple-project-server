@@ -16,7 +16,7 @@ pipeline {
             }
         stage('Deploy') {
             steps {
-		echo "Deploy"
+		echo "Execute Order 66"
             }
         }
     }
