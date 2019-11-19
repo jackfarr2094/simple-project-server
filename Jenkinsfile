@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
           steps {
 		sh 'mvn package -DskipTests' {
-		sh 'docker build --tag= jackfarr2094/simple-project:latest' .
+		sh 'docker build --tag= "jackfarr2094/simple-project:latest"' .
 		echo "Build"
 			}
                 }
