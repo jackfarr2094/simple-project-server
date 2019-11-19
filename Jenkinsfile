@@ -17,6 +17,7 @@ pipeline {
             }
         stage('Deploy') {
             steps {
+		sh 'docker push jackfarr2094/simple-project:latest'
 		echo "Execute Order 66"
             }
         }
