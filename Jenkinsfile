@@ -8,8 +8,8 @@ pipeline {
 		    sh 'mvn test -Dtest=IntegrationSuite'
                 }
             }
-##        stage('Build') {
-  ##          steps {
+        stage('Build') {
+          steps {
 		echo "Build"
                 }
             }
