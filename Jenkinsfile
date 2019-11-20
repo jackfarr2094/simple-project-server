@@ -8,8 +8,7 @@ pipeline {
 	stage('Version') {
 		echo "${VERSION}"
 		}
-	}
-	
+	}	
         stage('Test') {
             steps {
                     sh 'mvn test -Dtest=ControllerAndServiceSuite'
@@ -50,8 +49,7 @@ pipeline {
         }
 		steps {
 		echo "production"
- 		   }
+		   }
 		}
 	}
-
 }
